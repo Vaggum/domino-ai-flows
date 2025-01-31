@@ -17,6 +17,7 @@ Returns:
     Any: Either the input file or value
 '''
 def read_input(name: str, args: Namespace, is_file: bool=False):
+    print("printing arguments in flows.py@@@@@@",args)
     if os.environ.get('DOMINO_IS_WORKFLOW_JOB') == 'false':
         return getattr(args, name) # Local execution, return the arguments in command line
     else:
