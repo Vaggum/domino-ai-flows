@@ -2,8 +2,10 @@ import os
 import pandas as pd
 
 # Read the location of the csv from the task input blob
+print("workflow inputs##########",{workflow/inputs})
 input_name = "data_path"
 input_location = f"/workflow/inputs/{input_name}"
+print("input location@@@@@@",input_location)
 with open(input_location, "r") as file:
     input_csv = file.read()
 
