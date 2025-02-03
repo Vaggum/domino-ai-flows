@@ -10,6 +10,7 @@ try:
     with open(input_location, "r") as file:
         input_csv = file.read()
 except:
+    print("it is in exception")
     with open("/mnt/code/data/datasetA.csv", "r") as file:
         input_csv = file.read()
 # Read input csv to dataframe
