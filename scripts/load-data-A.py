@@ -5,7 +5,7 @@ import pandas as pd
 
 input_name = "data_path"
 input_location = f"/workflow/inputs/{input_name}"
-print("input location@@@@@@",input_location)
+print("input location@@@@@@",{input_location})
 with open(input_location, "r") as file:
     input_csv = file.read()
 
