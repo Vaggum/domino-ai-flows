@@ -15,6 +15,7 @@ except:
     with open("/mnt/code/data/datasetA.csv", "r") as file:
         input_csv = file.read()
 # Read input csv to dataframe
+print("this is input_csv",input_csv)
 df = pd.read_csv(input_csv) 
 
 
