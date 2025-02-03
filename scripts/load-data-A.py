@@ -15,9 +15,9 @@ try:
     df = pd.read_csv(input_csv) 
 except:
     with open("/mnt/code/data/datasetA.csv", "r") as file:
-       input_csv = file.read()
+       df = pd.read_csv(file) 
     print("it is in except block")
-    df = pd.read_csv(input_csv) 
+    
 
 
 # Write to Flow output
